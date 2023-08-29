@@ -1,0 +1,55 @@
+/* main */
+main {margin:110px 0;}
+main h1 {text-align: center; margin-bottom:60px;}
+main h1 a {}
+main h1 a img {width:250px; height:80px;}
+main .login {text-align:center;}
+main .login #id {}
+main .login #id fieldset {display:flex; flex-flow:column nowrap; align-items:center; margin-bottom:15px;}
+main .login #id fieldset #user_id {
+    width:330px;
+    padding-bottom:10px;
+    border-bottom:1px solid #888;
+    margin-bottom:45px;
+}
+main .login #id fieldset #user_pw {
+    width:330px;
+    padding-bottom:10px;
+    border-bottom:1px solid #888;
+}
+main .login #login_btn {
+    padding:20px 140px;
+    background:#222; color:#fff;
+
+}
+main .login .user_lock {}
+main .login .user_lock #lock {display:block; z-index:-9999;}
+main .login .user_lock .u_lock {display:flex; justify-content:center; align-items: center; margin-right:250px;}
+main .login .user_lock .u_lock img {width:18px; height:18px;}
+main .login .find {margin:40px 0;}
+main .login .find a {}
+main .login .find a::after {
+    display:inline-block; content:'';
+    width:1px; height:10px; margin:0 20px;
+    background:#000;
+}
+main .login .find a:last-child::after {display:none;}
+main .login .web_login {
+    display:flex; flex-flow:column nowrap; align-items:center;}
+main .login .web_login a {
+    width:330px;
+    display: flex; justify-content:center; align-items:center;
+    padding:13px 0; border-radius:10px;
+    margin-bottom:23px;
+}
+main .login .web_login a img {width:25px; height:25px; margin-right:10px;}
+main .login .web_login a img:nth-child(3) {}
+main .login .web_login a:nth-child(1) {
+    border:1px solid #EBCA12; color:#EBCA12;
+}
+main .login .web_login a:nth-child(2) {
+    border:1px solid #5AC451; color: #5AC451;
+}
+main .login .web_login a:nth-child(3) {
+    background:#D9D9D9; border-radius:0px;
+}

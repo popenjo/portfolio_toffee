@@ -1,0 +1,91 @@
+header .h_left nav a:nth-child(4) {color:#888;}
+/* scroll */
+main .scroll {
+    display:flex; flex-flow:column nowrap;
+    align-items: center; position:fixed; right:20px; bottom:30px; z-index:99;
+}
+main .scroll #up {background:#fff; padding:5px; border:1px solid #d9d9d9;}
+main .scroll #up img {width:20px; height:20px;}
+main .scroll #down {background:#fff; padding:5px; border:1px solid #d9d9d9;}
+main .scroll #down img {width:20px; height:20px;}
+/* main */
+main {margin-top:110px; border-top:1px solid #d9d9d9;}
+main .m_title {
+    width:160px; margin:30px 0; position:relative; left:410px;
+    display:flex; flex-flow:row nowrap; 
+    align-items:center; justify-content:space-around;
+}
+main .m_title a {}
+main .m_title a img {width:20px; height:20px;}
+main .m_title img {width:10px; height:10px;}
+main .m_title .top {}
+main .m_title h2 {}
+main .shirts {display:flex; flex-flow:row nowrap; justify-content:space-evenly; margin:0 250px;}
+main .shirts .s_left {}
+main .shirts .s_left > img {width:480px; height:570px;}
+main .shirts .s_left .s_btm {display:flex; align-items: center; justify-content: space-around;}
+main .shirts .s_left .s_btm > img {width:100px; height:100px;}
+main .shirts .s_left .s_btm > #next {width:30px; height:100px; background:#fff; border:1px solid #d9d9d9;}
+main .shirts .s_left .s_btm > #next img {width:18px; height:18px;}
+main .shirts .s_right {width:450px;}
+main .shirts .s_right .r_top {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+    border-bottom:1px solid #888;
+    margin-bottom:30px;
+}
+main .shirts .s_right .r_top p {padding:8px; margin-bottom:15px; border:1px solid #d9d9d9; border-radius:5px; font-size:0.8rem;}
+main .shirts .s_right .r_top .btn {}
+main .shirts .s_right .r_top .btn #mark {background:#fff;}
+main .shirts .s_right .r_top .btn #mark img {width:24px; height:24px;}
+main .shirts .s_right .r_top .btn #url {background:#fff;}
+main .shirts .s_right .r_top .btn #url img {width:24px; height:24px;}
+main .shirts .s_right .title {padding-bottom:25px; border-bottom:1px dashed #888;}
+main .shirts .s_right .title dt {font-size:1.2rem; margin-bottom:30px;}
+main .shirts .s_right .title dd {}
+main .shirts .s_right .title dd em {margin-left:100px; font-weight:600;}
+main .shirts .s_right .save {display:flex; padding:25px 0; border-bottom:1px dashed #888;}
+main .shirts .s_right .save dt {}
+main .shirts .s_right .save dd {margin-left:116px;}
+main .shirts .s_right .color {display:flex; flex-flow:row nowrap; align-items:center; padding-top:25px;}
+main .shirts .s_right .color dt {}
+main .shirts .s_right .color dd {margin-left:133px;}
+main .shirts .s_right .color dd #color_all {padding:7px;}
+main .shirts .s_right .color dd #color_all option {}
+main .shirts .s_right .size {
+    display:flex; flex-flow:row nowrap;
+    align-items:center; padding:25px 0; 
+    border-bottom:1px dashed #888;
+}
+main .shirts .s_right .size > dt {}
+main .shirts .s_right .size > dd {display:flex; margin-left:103px;}
+main .shirts .s_right .size input {position:relative; left:-99999px;}
+main .shirts .s_right p {margin-top:30px;}
+main .shirts .s_right .size > dd #size1 {}
+main .shirts .s_right .size > dd #size2 {}
+main .shirts .s_right .size > dd #size3 {}
+main .shirts .s_right .size > dd #size4 {}
+main .shirts .s_right .size > dd label {
+    flex:1; /* 가능한 공간을 균등하게 분배 */
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border: 1px solid #d9d9d9; border-radius:5px;
+    width:50px;
+    height:35px; /* 원하는 높이 */
+}
+main .shirts .s_right .size > dd label:hover {
+    background:#d9d9d9; transition:all 0.3s;
+}
+/* main .shirts .s_right .size > dd label::after {display:block; content:'';} */
+main .shirts .s_right p {margin-bottom:30px;}
+main .shirts .s_right .quantity {display:flex; flex-flow:row nowrap; align-items:center; margin-bottom:30px;}
+main .shirts .s_right .quantity #minus {background:#fff; font-size: 1.25rem; border:1px solid #d9d9d9; border-radius:10px 0 0 10px; padding:8px;}
+main .shirts .s_right .quantity #plus {background:#fff; font-size: 1.25rem; border:1px solid #d9d9d9; border-radius:0 10px 10px 0; padding:8px;}
+main .shirts .s_right .quantity .quantity_value {padding:10px 13px; border-top:1px solid #d9d9d9; border-bottom:1px solid #d9d9d9;}
+main .shirts .s_right .quantity .value_cash {margin-left:290px; font-size:1.5rem;}
+main .shirts .s_right .quantity .value_cash em {font-size:0.8rem;}
+main .shirts .s_right .shopimg {display:flex; flex-flow:row nowrap; justify-content:space-around;}
+main .shirts .s_right .shopimg a {padding:18px 80px; background:#000; color:#fff; border-radius:10px 0 0 10px;}
+main .shirts .s_right .shopimg a:last-child {background:#888; color:#fff; border-radius:0 10px 10px 0;}
+main .shirts .s_right .shopimg a:last-child:hover {background:rgba(136,136,136,0.8); transition:all 0.4s;}

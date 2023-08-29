@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="토피 로그인 페이지,toffee login">
+    <meta name="description" content="TOFFEE_LOGIN page 입니다.">
+    <title>TOFFEE | LOGIN</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./toffee_image/favicon/favicon_logo.png" type="image/x-icon">
+    <link rel="icon" href="./toffee_image/favicon/favicon_logo.png" type="image/x-icon">
+    <!-- style -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="h_top">
+            <div class="h_left">
+                <h1><a href="./index.html"><img src="./toffee_image/logo.jpg" alt="TOFFEE_logo"></a></h1>
+                <nav>
+                    <a href="./new.html">NEW</a>
+                    <a href="#">BEST</a>
+                    <a href="#">OUTER</a>
+                    <a href="./top.html">TOP</a>
+                    <a href="#">BOMTOM</a>
+                </nav>
+            </div>
+            <div class="h_right">
+                <form action="#" method="get" id="search">
+                    <fieldset>
+                        <legend class="skip">검색하기</legend>
+                        <input type="text" id="m_search" placeholder="검색어를 입력해주세요">
+                        <img src="./toffee_image/icon_search.png" alt="검색버튼">
+                    </fieldset>
+                </form>
+                <a href="./login.html">LOGIN</a>
+                <a href="#">JOIN</a>
+                <div class="user_icon">
+                    <a href="#"><img src="./toffee_image/user.png" alt="user_icon"></a>
+                    <a href="#"><img src="./toffee_image/shop.png" alt="user_icon"></a>
+                    <button type="button" id="menu_btn">
+                        <img src="./toffee_image/icon_menu.png" alt="user_icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="m_top">
+                <div class="t_left">
+                    <h2>카테고리 전체보기</h2>
+                </div>
+                <div class="t_right">
+                    <form action="#" method="get" id="menu_search">
+                        <fieldset>
+                            <legend class="skip">검색하기</legend>
+                            <input type="text" id="m_search2" placeholder="Search">
+                            <button type="button" id="s_user">
+                                <img src="./toffee_image/icon_search.png" alt="검색버튼">
+                            </button>
+                        </fieldset>
+                    </form>
+                    <button type="button" id="m_btn">
+                        <img src="./toffee_image/closer_weith.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="m_btm">
+                <dl>
+                    <dt>
+                        <a href="./new.html">NEW</a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">BEST</a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">OUTER</a>
+                    </dt>
+                    <dd><a href="#">후드 집업</a></dd>
+                    <dd><a href="#">트레이닝 자켓</a></dd>
+                    <dd><a href="#">블루종 / MA-1</a></dd>
+                    <dd><a href="#">윈드브레이커</a></dd>
+                    <dd><a href="#">블레이저</a></dd>
+                    <dd><a href="#">트러커 자켓</a></dd>
+                    <dd><a href="#">코트</a></dd>
+                    <dd><a href="#">후리스</a></dd>
+                    <dd><a href="#">가디건</a></dd>
+                    <dd><a href="#">아노락</a></dd>
+                    <dd><a href="#">베스트</a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="./top.html">TOP</a>
+                    </dt>
+                    <dd><a href="#">후드티셔츠</a></dd>
+                    <dd><a href="#">셔츠</a></dd>
+                    <dd><a href="#">니트</a></dd>
+                    <dd><a href="#">긴팔 티셔츠</a></dd>
+                    <dd><a href="#">반팔 티셔츠</a></dd>
+                    <dd><a href="#">맨투맨/스웻 셔츠</a></dd>
+                    <dd><a href="#">피케/카라 티셔츠</a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">BOTTOM</a>
+                    </dt>
+                    <dd><a href="#">데님팬츠</a></dd>
+                    <dd><a href="#">코튼팬츠</a></dd>
+                    <dd><a href="#">슬랙스</a></dd>
+                    <dd><a href="#">스웻팬츠</a></dd>
+                    <dd><a href="#">반바지</a></dd>
+                    <dd><a href="#">트레이닝/조거 팬츠</a></dd>
+                    <dd><a href="#">스커트</a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">LOCATION</a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">COMUNITY</a>
+                    </dt>
+                    <dd>
+                        <a href="#">LOOKBOOK</a>
+                        <a href="#">RE VIEW</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <h1><a href="#"><img src="./toffee_image/login_icon/h1.png" alt=""></a></h1> <!-- a 태그에 로그인 페이지로 이동 할 수 있도록 링크 걸어둘것 -->
+        <div class="login">
+            <form action="#" method="post" id="id">
+                <fieldset>
+                    <legend class="skip">아이디 입력창</legend>
+                    <input type="text" id="user_id" placeholder="ID" >
+                    <legend class="skip">비밀번호 입력창</legend>
+                    <input type="password" id="user_pw" placeholder="password" >
+                </fieldset>
+            </form>
+            <button type="button" id="login_btn">LOGIN</button>
+            <div class="user_lock">
+                <label for="lock"></label>
+                <input type="checkbox" id="lock">
+                <div class="u_lock">
+                    <img src="./toffee_image/login_icon/padlock.png" alt="보안접속">
+                    <p>보안접속</p>
+                </div>
+            </div>
+            <div class="find">
+                <a href="#">아이디찾기</a>
+                <a href="#">비밀번호찾기</a>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="web_login">
+                <a href="#"><img src="./toffee_image/login_icon/kakao_logo.png" alt="">카카오톡 로그인</a>
+                <a href="#"><img src="./toffee_image/login_icon/naver_logo.png" alt="">네이버 로그인</a>
+                <a href="#"><img src="./toffee_image/login_icon/truck.png" alt="">비회원 주문조회</a>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="f_menu">
+            <a href="#">회사소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">쇼핑몰 이용안내</a>
+            <a href="#">개인정보취급방침</a>
+            <a href="#">고객센터</a>
+        </div>
+        <address>
+            <p><em>COMPANY</em> 패션AFD <em>CEO</em>임수현 <em>Tel</em> 070-5223-2929</p><br>
+            <p><em>ADDRESS</em> 11901 경기도 구리시 갈매순환로166번길 46 (갈매동) 구리갈매금강펜테리움아이엑스타워 지식산업센터동 5층 511호 (갈매동)</p><br>
+            <p><em>BUSINESS NUMBER</em> 481-88-01924 <em>LICENSE</em> 2020-경기구리-0809 [사업자정보확인]</p><br>
+            <p><em>E-MAIL</em><a href="mailto:fashionafd@gmail.com">fashionafd@gmail.com</a></p> 
+        </address>
+        <p class="f_btn">COPYRIGHT ©패션AFD. ALL RIGHTS RESERVED.</p>
+    </footer>
+    <script src="./js/common.js"></script>
+    <script>
+        const lock = document.querySelector('#lock')
+        const u_lock = document.querySelector('.u_lock')
+        const u_lockImg = document.querySelector('.u_lock > img')
+        console.log(lock, u_lock, u_lockImg)
+        u_lock.addEventListener('click',function(){
+        })
+    </script>
+</body>
+</html>
