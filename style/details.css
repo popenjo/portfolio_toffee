@@ -35,7 +35,7 @@ main .shirts .s_right .r_top {
     margin-bottom:30px;
 }
 main .shirts .s_right .r_top p {padding:8px; margin-bottom:15px; border:1px solid #d9d9d9; border-radius:5px; font-size:0.8rem;}
-main .shirts .s_right .r_top .btn {}
+main .shirts .s_right .r_top .btn {position:relative; top:10px;}
 main .shirts .s_right .r_top .btn #mark {background:#fff;}
 main .shirts .s_right .r_top .btn #mark img {width:24px; height:24px;}
 main .shirts .s_right .r_top .btn #url {background:#fff;}
@@ -78,14 +78,18 @@ main .shirts .s_right .size > dd label:hover {
     background:#d9d9d9; transition:all 0.3s;
 }
 /* main .shirts .s_right .size > dd label::after {display:block; content:'';} */
-main .shirts .s_right p {margin-bottom:30px;}
+main .shirts .s_right .order {margin:15px 0; display:flex; flex-flow:row nowrap; align-items: center; justify-content: space-between;}
+main .shirts .s_right .order .number {font-size:0.8rem;}
+main .shirts .s_right .order .order1 {font-size:0.9rem; color:#7DBFF5;}
 main .shirts .s_right .quantity {display:flex; flex-flow:row nowrap; align-items:center; margin-bottom:30px;}
 main .shirts .s_right .quantity #minus {background:#fff; font-size: 1.25rem; border:1px solid #d9d9d9; border-radius:10px 0 0 10px; padding:8px;}
 main .shirts .s_right .quantity #plus {background:#fff; font-size: 1.25rem; border:1px solid #d9d9d9; border-radius:0 10px 10px 0; padding:8px;}
 main .shirts .s_right .quantity .quantity_value {padding:10px 13px; border-top:1px solid #d9d9d9; border-bottom:1px solid #d9d9d9;}
-main .shirts .s_right .quantity .value_cash {margin-left:290px; font-size:1.5rem;}
-main .shirts .s_right .quantity .value_cash em {font-size:0.8rem;}
+main .shirts .s_right .quantity #money {display:flex; align-items:center; margin-left:280px;}
+main .shirts .s_right .quantity #money .value_cash {margin-bottom:5px; font-size:1.5rem; font-weight:600;}
+main .shirts .s_right .quantity #money .value_cash em {font-size:0.8rem;}
 main .shirts .s_right .shopimg {display:flex; flex-flow:row nowrap; justify-content:space-around;}
 main .shirts .s_right .shopimg a {padding:18px 80px; background:#000; color:#fff; border-radius:10px 0 0 10px;}
+main .shirts .s_right .shopimg a:first-child {position:relative; left:2px;}
 main .shirts .s_right .shopimg a:last-child {background:#888; color:#fff; border-radius:0 10px 10px 0;}
 main .shirts .s_right .shopimg a:last-child:hover {background:rgba(136,136,136,0.8); transition:all 0.4s;}

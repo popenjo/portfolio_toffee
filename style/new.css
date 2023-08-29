@@ -39,7 +39,7 @@ main select {float:right; padding:10px; color:#888; border-radius:20px;}
 main select option {}
 /* 공통클래스 */
 main .product li .btn {}
-main .product li .btn a {font-size:0.95rem;}
+main .product li .btn p:first-child {font-size:0.95rem;}
 main .product li .btn p {font-weight:500; margin-top:10px;}
 /* product */
 main .product {
