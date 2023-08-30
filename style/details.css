@@ -1,4 +1,7 @@
 header .h_left nav a:nth-child(4) {color:#888;}
+/* 리뷰 페이지 css */
+main .review {text-align: center;}
+iframe {width:70%; height:100vh; margin-top:100px;}
 /* scroll */
 main .scroll {
     display:flex; flex-flow:column nowrap;
@@ -11,7 +14,7 @@ main .scroll #down img {width:20px; height:20px;}
 /* main */
 main {margin-top:110px; border-top:1px solid #d9d9d9;}
 main .m_title {
-    width:160px; margin:30px 0; position:relative; left:410px;
+    width:160px; margin:30px 0; position:relative; left:315px;
     display:flex; flex-flow:row nowrap; 
     align-items:center; justify-content:space-around;
 }
@@ -20,9 +23,9 @@ main .m_title a img {width:20px; height:20px;}
 main .m_title img {width:10px; height:10px;}
 main .m_title .top {}
 main .m_title h2 {}
-main .shirts {display:flex; flex-flow:row nowrap; justify-content:space-evenly; margin:0 250px;}
+main .shirts {display:flex; flex-flow:row nowrap; justify-content:space-evenly;}
 main .shirts .s_left {}
-main .shirts .s_left > img {width:480px; height:570px;}
+main .shirts .s_left > img {width:500px; height:600px;}
 main .shirts .s_left .s_btm {
     display:flex; align-items:center; justify-content:flex-start;
     margin-top:5px;
