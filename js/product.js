@@ -34,22 +34,60 @@ btn.addEventListener('click', function() {
 });
 
 console.log('---------------------------------------')
-// 색상 선택 x 사이즈를 선택했을시 경고문
+// 색상 선택x size를 선택했을시 경고문
+// 색상을 선택하고 사이즈를 선택했을때 문자 추가 및 사이즈 문자 추가
 const size = document.querySelectorAll('input[name="product_size"]')
 const u_size = document.querySelectorAll('label')
 const color = document.querySelector('#color_all')
 const order = document.querySelectorAll('.order')
 const product = document.querySelector('.order1')
-console.log(size, color, order, product, u_size)
-
-
+const imgTxt = document.querySelector('.s_left > img')
+console.log(size, color, order, product, u_size, imgTxt)
 
 size.forEach(radioButton => {
     radioButton.addEventListener('click', function() {
         if (color.value === 'top1') {
             window.alert('색상을 선택해주세요.');
         }else if (color.value <= 'top2'){
-            product.innerHTML = `데이 솔리드 카라 하프 티셔츠 그린 ${[]}`
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const colorAll = color.selectedOptions[0];
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
+        }else if (color.value <= 'top3'){
+            const colorAll = color.selectedOptions[0];
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
+        }else if (color.value <= 'top4'){
+            const colorAll = color.selectedOptions[0];
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
+        }else if (color.value <= 'top5'){
+            const colorAll = color.selectedOptions[0];
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
+        }else if (color.value <= 'top6'){
+            const colorAll = color.selectedOptions[0];
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
+        }else if (color.value <= 'top7'){
+            const colorAll = color.selectedOptions[0];
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
+        }else if (color.value <= 'top8'){
+            const colorAll = color.selectedOptions[0];
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
+        }else if (color.value <= 'top9'){
+            const colorAll = color.selectedOptions[0];
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
         }
     });
 });
@@ -65,11 +103,16 @@ const font = document.querySelector('#money > em')
 console.log(minus, plus, quantity_value, cash, font)
 
 let quantity = 0;
-let value_cash = 33000;
+let user_money = 33000;
 
+// 색상 or 사이즈 선택 안하고 버튼 클릭 시 경고문
 function updateQuantityAndValue() {
-    quantity_value.textContent = quantity;
-    cash.textContent = (quantity * value_cash).toLocaleString('ko-kr');
+    if (color.value === 'top1') {
+        window.alert('색상과 사이즈를 선택해주세요.')
+    }else {
+        quantity_value.textContent = quantity;
+        cash.textContent = (quantity * user_money).toLocaleString('ko-kr');
+    }
 }
 
 minus.addEventListener('click', function() {
@@ -97,6 +140,22 @@ subImg.forEach(subImg => {
         mainImg.alt = subImg.alt;
     })
 })
+
+size.forEach(radioButton => {
+    radioButton.addEventListener('click', function() {
+        if (color.value === 'top1') {
+            window.alert('색상을 선택해주세요.');
+        } else {
+            const selectedLabel = document.querySelector('label[for="' + radioButton.id + '"]');
+            const colorAll = color.selectedOptions[0];
+            const productName = imgTxt.alt;
+            product.textContent = `${productName} ${colorAll.textContent} ${selectedLabel.textContent}`;
+            quantity_value.textContent = 1;
+            quantity = 1;
+            cash.innerHTML = (quantity * user_money).toLocaleString('ko-kr');
+        }
+    });
+});
 
 
 

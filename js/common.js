@@ -18,3 +18,4 @@ open_menu.addEventListener('click',function(){
 closer.addEventListener('click',function(){
     menu.style.transform = 'translateX(100%)';
 })
+

@@ -9,6 +9,7 @@ const swiper_bg = new Swiper('#swiper_bg',{
     direction:'horizontal',
     scrollbar:{el:'#swiper_bg .swiper-scrollbar'}, //스크롤바 표시
 })
+
 // scroll - bar
 const scrollUp = document.querySelector('#up')
 const scrolldown = document.querySelector('#down')

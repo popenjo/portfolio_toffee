@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="토피 로그인 페이지,toffee login">
-    <meta name="description" content="TOFFEE_LOGIN page 입니다.">
-    <title>TOFFEE | LOGIN</title>
+    <meta name="keywords" content="토피신상품, 크롭 슬림 하프 셔츠, 셔츠, 신상품셔츠">
+    <meta name="description" content="토피 | 크롭 슬림 하프 셔츠 판매페이지 입니다.">
+    <title>토피 | 크롭 슬림 하프 셔츠 (4 Color)</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./toffee_image/favicon/favicon_logo.png" type="image/x-icon">
     <link rel="icon" href="./toffee_image/favicon/favicon_logo.png" type="image/x-icon">
     <!-- style -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/details.css">
 </head>
 <body>
     <!-- header -->
@@ -135,36 +135,93 @@
             </div>
         </div>
     </header>
-    <!-- main -->
     <main>
-        <h1><a href="#"><img src="./toffee_image/login_icon/h1.png" alt=""></a></h1> <!-- a 태그에 로그인 페이지로 이동 할 수 있도록 링크 걸어둘것 -->
-        <div class="login">
-            <form action="#" method="post" id="id">
-                <fieldset>
-                    <legend class="skip">아이디 입력창</legend>
-                    <input type="text" id="user_id" placeholder="ID" >
-                    <legend class="skip">비밀번호 입력창</legend>
-                    <input type="password" id="user_pw" placeholder="password" >
-                </fieldset>
-            </form>
-            <button type="button" id="login_btn">LOGIN</button>
-            <div class="user_lock">
-                <label for="lock"></label>
-                <input type="checkbox" id="lock">
-                <div class="u_lock">
-                    <img src="./toffee_image/login_icon/padlock.png" alt="보안접속">
-                    <p>보안접속</p>
+        <div class="scroll">
+            <button type="button" id="up"><img src="./toffee_image/upload.png" alt=""></button>
+            <button type="button" id="down"><img src="./toffee_image/down.png" alt=""></button>
+        </div>
+        <div class="m_title">
+            <a href="./index.html"><img src="./toffee_image/sales_page/home.png" alt="토피 메인사이트"></a>
+            <img src="./toffee_image/next.png" alt="">
+            <a href="./top.html" class="top">TOP</a>
+            <img src="./toffee_image/next.png" alt="">
+            <h2>셔츠</h2>
+        </div>
+        <div class="shirts">
+            <div class="s_left">
+                <img src="./toffee_image/top_img/top16.jpg" alt="크롭 슬림 하프 셔츠">
+                <div class="s_btm">
+                    <img src="./toffee_image/top_img/top48.jpg" alt="크롭 슬림 하프 셔츠">
+                    <img src="./toffee_image/top_img/top16.jpg" alt="크롭 슬림 하프 셔츠">
+                    <img src="./toffee_image/top_img/top23.jpg" alt="크롭 슬림 하프 셔츠">
+                    <img src="./toffee_image/top_img/top25.jpg" alt="크롭 슬림 하프 셔츠">
+                    <button type="button" id="next">
+                        <img src="./toffee_image/next.png" alt="">
+                    </button>
                 </div>
             </div>
-            <div class="find">
-                <a href="#">아이디찾기</a>
-                <a href="#">비밀번호찾기</a>
-                <a href="#">회원가입</a>
-            </div>
-            <div class="web_login">
-                <a href="#"><img src="./toffee_image/login_icon/kakao_logo.png" alt="">카카오톡 로그인</a>
-                <a href="#"><img src="./toffee_image/login_icon/naver_logo.png" alt="">네이버 로그인</a>
-                <a href="#"><img src="./toffee_image/login_icon/truck.png" alt="">비회원 주문조회</a>
+            <div class="s_right">
+                <div class="r_top">
+                    <p>무료배송</p>
+                    <div class="btn">
+                        <button type="button" id="mark">
+                            <img src="./toffee_image/save.png" alt="">
+                        </button>
+                        <button type="button" id="url">
+                            <img src="./toffee_image/sales_page/share.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <dl class="title">
+                    <dt>크롭 슬림 하프 셔츠 (4 Color)</dt>
+                    <dd>소비자가<em>45,000원</em></dd>
+                </dl>
+                <dl class="save">
+                    <dt>적립금</dt>
+                    <dd>900원 (2%)</dd>
+                </dl>
+                <dl class="color">
+                    <dt>색상</dt>
+                    <dd>
+                        <select id="color_all" name="product_list">
+                            <option value="top1">[필수] 색상을 선택해주세요.</option>
+                            <option value="top2">화이트</option>
+                            <option value="top3">레몬</option>
+                            <option value="top4">블랙</option>
+                            <option value="top5">블루</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl class="size">
+                    <dt>사이즈</dt>
+                    <dd>
+                        <input type="radio" id="size1" name="product_size" value="M">
+                        <label for="size1">M</label>
+                        <input type="radio" id="size2" name="product_size" value="L">
+                        <label for="size2">L</label>
+                        <input type="radio" id="size3" name="product_size" value="XL">
+                        <label for="size3">XL</label>
+                        <input type="radio" id="size4" name="product_size" value="XXL">
+                        <label for="size4">XXL</label>
+                    </dd>
+                </dl>
+                <div class="order">
+                    <span class="number">(최소주문수량 1개 이상)</span>
+                    <span class="order1"></span>
+                </div>
+                <div class="quantity">
+                    <button type="button" id="minus">－</button>
+                    <span class="quantity_value">0</span>
+                    <button type="button" id="plus">＋</button>
+                    <div id="money">
+                        <span class="value_cash">0</span>
+                        <em>원</em>
+                    </div>
+                </div>
+                <div class="shopimg">
+                    <a href="#">장바구니</a>
+                    <a href="#">바로구매</a>
+                </div>
             </div>
         </div>
     </main>
@@ -185,14 +242,7 @@
         </address>
         <p class="f_btn">COPYRIGHT ©패션AFD. ALL RIGHTS RESERVED.</p>
     </footer>
+    <script src="./js/product.js"></script>
     <script src="./js/common.js"></script>
-    <script>
-        const lock = document.querySelector('#lock')
-        const u_lock = document.querySelector('.u_lock')
-        const u_lockImg = document.querySelector('.u_lock > img')
-        console.log(lock, u_lock, u_lockImg)
-        u_lock.addEventListener('click',function(){
-        })
-    </script>
 </body>
 </html>
