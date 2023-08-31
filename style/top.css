@@ -15,7 +15,7 @@ main .scroll #up img {width:20px; height:20px;}
 main .scroll #down {background:#fff; padding:5px; border:1px solid #d9d9d9;}
 main .scroll #down img {width:20px; height:20px;}
 main .title img {}
-main .top_bar {border-bottom:1px solid #000;}
+main .top_bar {border-bottom:1px solid #d9d9d9;}
 main .top_bar .title {}
 main .top_bar .title img:nth-child(1) {margin-right:10px;}
 main .top_bar .title img:nth-child(3) {width:10px; height:10px; margin-right:10px;}
@@ -23,15 +23,15 @@ main .top_bar .title a {margin-right:10px; font-size:1.2rem;}
 main .top_bar .title em {font-size:0.95rem;}
 main .top_right {float:right; position:relative; bottom:28px;}
 main .top_right a {
-    border:1px solid #888; padding:10px;
+    border:1px solid #d9d9d9; padding:10px;
     border-bottom:1px solid #fff;
 }
 main .top_right a:nth-child(2) {border:none;}
 main .top_right a:nth-child(3) {border:none;}
 main .top_right a:nth-child(4) {border:none;}
 main .top_right a:hover {
-    border:1px solid #888; padding:10px;
-    border-bottom:1px solid #fff;
+    border:1px solid #d9d9d9; padding:10px;
+    border-bottom:1px solid #fff; background:#eee;
 }
 main select {clear:both; float:right; margin:10px 0; padding:10px; color:#888; border-radius:20px;}
 main select option {}

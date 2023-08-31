@@ -8,7 +8,7 @@ main .scroll #up img {width:20px; height:20px;}
 main .scroll #down {background:#fff; padding:5px; border:1px solid #d9d9d9;}
 main .scroll #down img {width:20px; height:20px;}
 /* swiper */
-#swiper_bg {padding-top:40px;}
+#swiper_bg {padding-top:40px; min-width:1920px;}
 #swiper_bg .swiper-wrapper {}
 #swiper_bg .swiper-wrapper .main_bg {}
 #swiper_bg .swiper-wrapper .main_bg a {}
@@ -24,7 +24,7 @@ main .scroll #down img {width:20px; height:20px;}
     background:#000;
 }
 /* main */
-main {width:100%;}
+main {min-width:1440px;}
 main h2 a {display:block; text-align:center; font-size:1.5rem; margin:50px 0;}
 /* all class */
 main #best .swiper-wrapper .color_all {margin:15px 0;}

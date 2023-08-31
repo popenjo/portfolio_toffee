@@ -20,20 +20,20 @@ main .title a {margin-right:10px; font-size:1.2rem;}
 main .title em {font-size:0.95rem;}
 main .line {
     display:block; content:'';
-    border-bottom:1px solid #888;
+    border-bottom:1px solid #d9d9d9;
     margin-bottom:15px;
 }
 main .top_right {float:right; position:relative; bottom:28px;}
 main .top_right a {
-    border:1px solid #888; padding:10px;
+    border:1px solid #d9d9d9; padding:10px;
     border-bottom:1px solid #fff;
 }
 main .top_right a:nth-child(2) {border:none;}
 main .top_right a:nth-child(3) {border:none;}
 main .top_right a:nth-child(4) {border:none;}
 main .top_right a:hover {
-    border:1px solid #888; padding:10px;
-    border-bottom:1px solid #fff;
+    border:1px solid #d9d9d9; padding:10px;
+    border-bottom:1px solid #fff; background:#eee;
 }
 main select {float:right; padding:10px; color:#888; border-radius:20px;}
 main select option {}
