@@ -24,7 +24,7 @@ main .scroll #down img {width:20px; height:20px;}
     background:#000;
 }
 /* main */
-main {min-width:1440px;}
+main {}
 main h2 a {display:block; text-align:center; font-size:1.5rem; margin:50px 0;}
 /* all class */
 main #best .swiper-wrapper .color_all {margin:15px 0;}
