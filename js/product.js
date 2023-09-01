@@ -1,19 +1,13 @@
 // scroll - bar
 const scrollUp = document.querySelector('#up')
-const scrolldown = document.querySelector('#down')
-console.log(scrollUp, scrolldown)
+console.log(scrollUp)
 scrollUp.addEventListener('click',function(){
     window.scrollTo({
         top:0,
         behavior:'smooth'
     })
 })
-scrolldown.addEventListener('click',function(){
-    window.scrollTo({
-        bottom:0,
-        behavior:'smooth',
-    })
-})
+
 
 // 북마크 클릭 시 이미지 변경
 const btn = document.querySelector('#mark')
