@@ -20,9 +20,3 @@ scrollUp.addEventListener('click',function(){
         behavior:'smooth'
     })
 })
-scrolldown.addEventListener('click',function(){
-    window.scrollTo({
-        bottom:0,
-        behavior:'smooth',
-    })
-})
